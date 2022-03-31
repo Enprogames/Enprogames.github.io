@@ -78,7 +78,14 @@ body {
     height: 20px;
 }
 
-/* Main Content of the webpage */
+/* Social Media Links */
+#social-links {
+    
+    color: white;
+    border: 1px solid red;
+}
+
+/* ### Homepage ### */
 
 .content {
     margin: 20px;
@@ -118,20 +125,13 @@ body {
     text-shadow: 0px 4px 4px #0025E8;
 }
 
+/* ### Resume Page ### */
 
-/* Social Media Links */
-#social-links {
-    
-    color: white;
-    border: 1px solid red;
+#resume-table td {
+    padding: 20px;
 }
 
-
-/* Remove this later */
-.test-items {
-    position:sticky;
-    top: 5px;
-    display: flex;
-    flex-direction: column;
-
+.title-item {
+    font-size: 1.2em;
+    font-weight: bold;
 }
