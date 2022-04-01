@@ -1,0 +1,161 @@
+<!-- CSCI 115 Winter 2022 Mini Project -->
+<!-- projects.html - Skeleton for website projects page -->
+<!-- Ethan Posner (658-180-559), March 30th, 2022 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ethan Posner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Ethan Posner - Software Engineer</h1>
+        </div>
+        <div class="navbar">
+            <ul class="button-list">
+                <li><a href="index.html"><img src="img/home-white.png" class="button-icon">&nbsp;Home</a></li>
+                <li><a href="resume.html"><img src="img/form-white.png" class="button-icon">&nbsp;Resume</a></li>
+                <li><a href="projects.html"><img src="img/bulb-white.png" class="button-icon">&nbsp;Projects</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="project-container">
+            <div class="project-item">
+                <div class="project-left-part">
+                    <h2>SQL Injection Example Website</h2>
+                    <img class="project-image" src="img/sql-injection3.jpg">
+                </div>
+                <div class="project-right-part">
+                    <p>
+                        A simple Django website, created in collaboration with Sebastien Van Den Brempt
+                        (<a href="https://github.com/Sebastien-Van">github</a>), to demonstrate
+                        how SQL injections work. It features user registration and logging in,
+                        and stores documents for the users.
+                    </p>
+                    <p>
+                        To make the site vulnerable to SQL injections, a custom user authentication
+                        backend was added. At the time of writing, this authentication backend is the
+                        background of this website. It works by executing the following SQL statement:
+                    </p>
+                    <p>""SELECT * FROM auth_user WHERE username = '%s' and password='%s'" % (username, make_password(password, salt=salt))"</p>
+                    <p>
+                        If more than one user is found using the query, the first one is returned. This
+                        means that to bypass the system's authentication and login as a user, named "Nick"
+                        for example, they need only type "Nick' OR 1=='1" into the username box.
+                    </p>
+                    <p>
+                        The goal of this project was to demonstrate how easy SQL injections are to exploit if a web developer
+                        isn't careful. According to 
+                        <a href="https://www.wordfence.com/learn/how-to-prevent-sql-injection-attacks/">wordfence.com</a>,
+                        18% of website hacks involve the use of SQL injections. They are often used to
+                        steal sensitive information, such as hashed passwords and credit card numbers.
+                    </p>
+                    <ul>
+                        <li>Python (Django)</li>
+                        <li>SQL (SQLite)</li>
+                        <li>HTML5/CSS</li>
+                    </ul>
+                    <a class="button" href="https://github.com/Enprogames/sql-injection-example" target="_blank">
+                        <img src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Repository
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="project-item">
+                <div class="project-left-part">
+                    <h2>Flashcard Tool</h2>
+                    <img class="project-image" src="img/flashcard-tool1.JPG">
+                    <img class="project-image" src="img/flashcard-tool2.JPG">
+                </div>
+                <div class="project-right-part">
+                    <p>
+                        A program used for displaying flashcards. Flashcards are a great way to study
+                        and memorize large amounts of information. They allow the user to repeatedly
+                        quiz themselves on topics in order to continually reinforce them.
+                    </p>
+                    <p>
+                        For the GUI, the python TKinter library was used. Most of my GUI programs use
+                        this library as it allows for the quick creation of detailed user interfaces.
+                        At this time, to create flashcards users must create CSV files in the "data_files"
+                        directory of this project. They can also integrate the program with notion, share
+                        their notion databases with the integration, and access their flashcards this way.
+                        More detailed instructions are in the README of this project's github repository.
+                    </p>
+                    <p>
+                        In the future, I aim to do away with the notion integration, as this an unintuitive
+                        method of adding flashcard data to the program. I aim to create a create, read, edit,
+                        delete, list (CRUDL) menu for the flashcards within the program itself.
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>TKinter</li>
+                        <li>Notion API</li>
+                    </ul>
+                    <a class="button" href="https://github.com/Enprogames/Flashcard-Tool" target="_blank">
+                        <img src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Repository
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="project-item">
+                <div class="project-left-part">
+                    <h2>School Clock</h2>
+                    <img class="project-image" src="img/clock1.JPG" id="clock-image">
+                </div>
+                <div class="project-right-part">
+                    <p>
+                        A python clock, created for the computer science classroom at my highschool, which
+                        displayed the time, current class, whether it is break time, etc. Custom schedules
+                        can also be created and used. 
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>TKinter</li>
+                        <li>Joke API</li>
+                    </ul>
+                    <a class="button" href="https://github.com/Enprogames/Python-Clock" target="_blank">
+                        <img src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+            <div class="project-item">
+                <div class="project-left-part">
+                    <h2>Music Player</h2>
+                </div>
+                <div class="project-right-part">
+                    <p>
+                        A simple music player program written in python. It uses pygame mixer for 
+                    </p>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <a class="button" href="https://github.com/Enprogames/MusicPlayer" target="_blank">
+                        <img src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul id="social-links" class="button-list">
+        <li><a href="https://github.com/Enprogames" target="_blank">
+            <img src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Github
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/ethanposner/" target="_blank">
+            <img src="img/linkedin-white.png" class="button-icon">&nbsp;Linkedin
+        </a></li>
+        <li><a href="https://stackoverflow.com/users/6946463/ethan-posner" target="_blank">
+            <img src="img/stackoverflow-white.png" class="button-icon">&nbsp;Stackoverflow
+        </a></li>
+    </ul>
+</body>
+</html>
