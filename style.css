@@ -71,6 +71,7 @@ a:hover {
 
 .button-list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -205,6 +206,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-right: auto;
     padding: 20px;
@@ -221,8 +223,10 @@ a:hover {
 }
 
 .project-image {
+    object-fit: contain;
     margin: 5px;
     width: 400px;
+    max-width: 80%;
     height: 300px;
 }
 
