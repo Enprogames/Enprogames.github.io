@@ -198,7 +198,8 @@ a:hover {
     flex-wrap: wrap;
     margin: 20px;
     border-radius: 30px;
-    background:rgba(27, 44, 93, 0.407);
+    /* background:rgba(27, 44, 93, 0.407); */
+    background: rgba(128, 128, 128, 0.179);
 }
 
 
