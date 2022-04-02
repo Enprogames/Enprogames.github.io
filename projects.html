@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Ethan Posner</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="code-format.css">
 </head>
 <body>
     <div class="header">
@@ -44,7 +45,17 @@
                         backend was added. At the time of writing, this authentication backend is the
                         background of this website. It works by executing the following SQL statement:
                     </p>
-                    <p>""SELECT * FROM auth_user WHERE username = '%s' and password='%s'" % (username, make_password(password, salt=salt))"</p>
+                    <p class="code python-code">
+                        <span class="sql-code">
+                        "<span class="clause">SELECT</span> 
+                        <span class="clause">*</span> 
+                            <span class="clause">FROM</span>
+                                <span class="identifier">auth_user</span>
+                            <span class="clause">WHERE</span>
+                                <span class="identifier">username</span> = <span class="string">'%s'</span>
+                                <span class="bool-operator">AND</span> <span class="identifier">password</span>=<span class="string">'%s'</span>"</span>
+                                % (username, <span class="function">make_password</span>(password, salt=salt))
+                    </p>
                     <p>
                         If more than one user is found using the query, the first one is returned. This
                         means that to bypass the system's authentication and login as a user, named "Nick"
@@ -130,14 +141,18 @@
             <div class="project-item">
                 <div class="project-left-part">
                     <h2>Music Player</h2>
+                    <img class="project-image" src="img/music-player1.JPG">
                 </div>
                 <div class="project-right-part">
                     <p>
                         A simple music player program written in python. It uses pygame mixer for playing
-                        sound files, and TKinter for the user interface.
+                        sound files, and TKinter for the user interface. It also uses a python library
+                        called Mutagen for gathering metadata about song files.
                     </p>
                     <ul>
-                        <li></li>
+                        <li>Python</li>
+                        <li>TKinter</li>
+                        <li>Mutagen</li>
                     </ul>
                     <a class="button" href="https://github.com/Enprogames/MusicPlayer" target="_blank">
                         <img src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Repository
