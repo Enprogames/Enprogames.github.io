@@ -198,7 +198,6 @@ a:hover {
     flex-wrap: wrap;
     margin: 20px;
     border-radius: 30px;
-    /* background:rgba(27, 44, 93, 0.407); */
     background: rgba(128, 128, 128, 0.179);
 }
 
@@ -225,10 +224,9 @@ a:hover {
 
 .project-image {
     object-fit: contain;
-    margin: 5px;
+    margin: 10px;
     width: 400px;
     max-width: 80%;
-    height: 300px;
 }
 
 #clock-image {
