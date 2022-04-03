@@ -5,7 +5,6 @@
 body {
     background-image: url("img/bg-code-blured.jpg");
     font-family: Courier New, Helvetica, sans-serif;
-    /* font-family: */
 
     display: flex;
     flex-direction: column;
@@ -236,7 +235,7 @@ a:hover {
 }
 
 #hiking-hobby {
-    background-image: url("img/hiking1.jpg");
+    background-image: url("img/hiking-bg.jpg");
     background-size: cover;
     resize: both;
 }
