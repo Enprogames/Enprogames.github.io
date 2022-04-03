@@ -179,7 +179,6 @@ a:hover {
 }
 
 #resume-table td ul {
-    padding: 20px;
     line-height: normal;
 }
 
@@ -188,7 +187,7 @@ a:hover {
     font-weight: bold;
 }
 
-/* ### Project Page ### */
+/* ### Projects and Hobbies Pages ### */
 
 .project-container {
     display: flex;
@@ -236,6 +235,38 @@ a:hover {
     width: 500px;
 }
 
+#hiking-hobby {
+    background-image: url("img/hiking1.jpg");
+    background-size: cover;
+    resize: both;
+}
+
+#hiking-hobby p, #hiking-hobby figcaption {
+    text-shadow: 2px 0 0 rgb(0, 0, 0),
+                -2px 0 0 rgb(0, 0, 0),
+                0 2px 0 rgb(0, 0, 0),
+                0 -2px 0 rgb(0, 0, 0),
+                1px 1px rgb(0, 0, 0),
+                -1px -1px 0 rgb(0, 0, 0),
+                1px -1px 0 rgb(0, 0, 0),
+                -1px 1px 0 rgb(0, 0, 0);
+    
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(39, 38, 52, 0.594);
+}
+
+.free-photo {
+    max-width: 80%;
+    width: 600px;
+}
+
+figcaption {
+    font-size: 0.8em;
+}
+
+/* Contact Page */
+
 .contact-form-container {
     display: flex;
     flex-direction: column;
@@ -255,14 +286,4 @@ a:hover {
 #message_area {
     width: 100%;
     height: 300px;
-}
-
-.hiking-photo {
-    max-width: 80%;
-    width: 600px;
-}
-
-figcaption {
-    font-size: 0.8em;
-    color: rgba(255, 255, 255, 0.776);
 }
