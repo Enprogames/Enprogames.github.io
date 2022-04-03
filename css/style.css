@@ -285,4 +285,13 @@ figcaption {
 #message_area {
     width: 100%;
     height: 300px;
+    margin: 10px;
+}
+
+#submit-button {
+    width: 80px;
+    height: 30px;
+    background:rgba(128, 128, 128, 0.179);
+    color: white;
+    border-radius: 20px;
 }
