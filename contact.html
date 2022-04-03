@@ -1,5 +1,5 @@
 <!-- CSCI 115 Winter 2022 Mini Project -->
-<!-- index.html - Skeleton for website homepage -->
+<!-- contact.html - Skeleton for contact page -->
 <!-- Ethan Posner (658-180-559), March 30th, 2022 -->
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Ethan Posner</title>
+    <title>Contact - Ethan Posner</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,26 +27,29 @@
             </ul>
         </div>
     </div>
+
     <div class="content">
-        <div id="personal-summary">
-            <img class="self-portrait" src="img/self-portrait-september2021.jpg">
-            <div class="text-box">
-                <ul>
-                    <li>Computer Science Major at Vancouver Island University</li>
-                    <br>
-                    <li>Software Engineer</li>
-                    <ul>
-                        <li>Python, C, C++, Java</li>
-                    </ul>
-                    <br>
-                    <li>Web Developer</li>
-                    <ul>
-                        <li>HTML, CSS, Javascript, Django</li>
-                    </ul>
-                </ul>
-            </div>
+        <div class="contact-form-container">
+        <h3>Send me a message</h3>
+        <form>
+            Subject: <input id="subject_textbox", type="text", size="50", name="user_subject">
+            Message:
+            <textarea id="message_area"></textarea>
+            <button id="submit_button" onclick="SendEmail()">Submit</button>
+        </form>
+        
+        <script>
+            function SendEmail() {
+                let user_subject = document.getElementById("subject_textbox");
+                let user_message = document.getElementById("message_area");
+
+                alert("Openning message window...");
+                window.open("mailto:posnerethan2002@gmail.com?subject=" + user_subject.value + "&body=" + user_message.value);
+            }
+        </script>
         </div>
     </div>
+
     <ul id="social-links" class="button-list">
         <li><a href="https://github.com/Enprogames" target="_blank">
             <img src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Github

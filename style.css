@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
+    text-shadow: 0px 4px 4px #000000;
 }
 
 .button {
@@ -39,6 +40,7 @@ a:hover {
 
 .button:hover {
     color: lightblue;
+    background: rgb(9, 8, 15);
 }
 
 /* Top header of webpage. This will be the same on each webpage */
@@ -88,7 +90,7 @@ a:hover {
     color: white;
     text-decoration: none;
     text-shadow: 0px 4px 4px #000000;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     background: rgba(39, 38, 52, 0.594);
     border-radius: 15px;
@@ -99,6 +101,7 @@ a:hover {
 
 .button-list a:hover {
     color: lightblue;
+    background: rgb(39, 38, 52);
 }
 
 .button-icon {
@@ -231,4 +234,35 @@ a:hover {
 
 #clock-image {
     width: 500px;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form-container form input {
+   margin: 10px;
+}
+
+#message_area {
+    width: 100%;
+    height: 300px;
+}
+
+.hiking-photo {
+    max-width: 80%;
+    width: 600px;
+}
+
+figcaption {
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.776);
 }
