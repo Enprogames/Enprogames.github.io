@@ -161,15 +161,17 @@ a:hover {
     border-radius: 20px;
 }
 
-#resume-table th {
+#resume-table th, #resume-table td {
     border-radius: 20px;
     padding: 20px;
+    border: 1px solid white;
+}
+
+#resume-table th {
     font-size: 1.1em;
 }
 
 #resume-table td {
-    border-radius: 20px;
-    padding: 20px;
     line-height: 5px;
 }
 
