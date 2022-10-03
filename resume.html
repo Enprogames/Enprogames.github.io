@@ -11,83 +11,86 @@
     <title>Resume - Ethan Posner</title>
     <link rel="icon" href="img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="components.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="title">
-            <h1>Ethan Posner - Software Engineer</h1>
-        </div>
-        <div class="navbar">
-            <ul class="button-list">
-                <li><a href="/"><img alt="home-immage" src="img/home-white.png" class="button-icon">&nbsp;Home</a></li>
-                <li><a href="resume.html"><img alt="paper-image" src="img/form-white.png" class="button-icon">&nbsp;Resume</a></li>
-                <li><a href="projects.html"><img alt="bulb-image" src="img/bulb-white.png" class="button-icon">&nbsp;Projects</a></li>
-                <li><a href="hobbies.html"><img alt="hiker-image" src="img/hobbies.png" class="button-icon">&nbsp;Hobbies</a></li>
-                <li><a href="contact.html"><img alt="mail-image" src="img/contact.png" class="button-icon">&nbsp;Contact</a></li>
-            </ul>
-        </div>
-    </div>
+    <div class="header"></div>
 
     <div class="content">
-        <table id="resume-table">
-            <tr> <!-- Row 1 -->
-                <th rowspan="1">Education</th>
-                <td>
-                    <p class="title-item">Computer Science Major<p>
-                    <p>North Island College / Vancouver Island University</p>
-                    <p><strong>2020-Present</strong></p>
-                </td>
-            </tr>
-            <tr> <!-- Row 2 -->
-                <th rowspan="2">Work Experience</th>
-                <td>
-                    <p class="title-item">Software Engineer</p>
-                    <p>River City Future Technologies Ltd., Campbell River, BC</p>
-                    <p><strong>May-August 2021</strong></p>
-                    <ul>
-                        <li>Backend web development using Python and Django</li>
-                        <li>Blockchain research</li>
-                        <li>Algorithm engineering</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr> <!-- Row 3 -->
-                <td>
-                    <p class="title-item">Surveyer's Assistant</p>
-                    <p>GW Lindberg Surveying Ltd., Chemainus, BC</p>
-                    <p><strong>August 2019</strong></p>
-                    <ul>
-                        <li>Moved equipment around work site</li>
-                        <li>Performed other duties & related tasks as required</li>
-                        <li>Performed well and maintained a positive attitude during stressful situations</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr> <!-- Row 4 -->
-                <th rowspan="2">Extracurricular Activities</th>
-                <td>
-                    <p class="title-item">Technation Sustainability and Post-Pandemic Recovery Competition</p>
-                    <p>Technation Canada and Microsoft</p>
-                    <p><strong>March 2022</strong></p>
-                    <p>
-                        Me and two other CSCI students got together and came up with the idea for using
-                        software to optimally open and close window blinds. This would allow for sunlight
-                        energy to heat the building in the summer, and be blocked in the winter.
-                        We created an interactive diagram for showing how this could be achieved. It
-                        can be found <a href="https://github.com/Enprogames/sustainablinds">here</a>.
-                        For more information on the challenge, visit
-                        <a href="https://technationcanada.agorize.com/en/challenges/open_innovation">its webpage</a>.
-                    </p>
-                    <ul>
-                        <li>Placed top 5 in Canada</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr> <!-- Row 5 -->
-                <td>
-                    <p class="title-item">Campbell River Hackathon</p>
+        <div id="double-column-container">
+            <div class="double-column-item square-box-emphasis">
+                <div class="double-column-left-part square-box-emphasis">
+                    <h2>Education</h2>
+                </div>
+                <div class="double-column-right-part">
+                    <div class="square-box-emphasis">
+                        <p class="title-item">Computer Science Major<p>
+                        <p>North Island College / Vancouver Island University</p>
+                        <p><strong>2020-Present</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="double-column-item square-box-emphasis">
+                <div class="double-column-left-part square-box-emphasis">
+                    <h2>Work Experience</h2>
+                </div>
+                <div class="double-column-right-part">
+                    <div class="square-box-emphasis">
+                        <p class="title-item">Software Engineer</p>
+                        <p>River City Future Technologies Ltd., Campbell River, BC</p>
+                        <p><strong>May-August 2021</strong></p>
+                        <ul>
+                            <li>Backend web development using Python and Django</li>
+                            <li>Blockchain research</li>
+                            <li>Algorithm engineering</li>
+                        </ul>
+                    </div>
+                    <div class="square-box-emphasis">
+                        <p class="title-item">Surveyer's Assistant</p>
+                        <p>GW Lindberg Surveying Ltd., Chemainus, BC</p>
+                        <p><strong>August 2019</strong></p>
+                        <ul>
+                            <li>Moved equipment around work site</li>
+                            <li>Performed other duties & related tasks as required</li>
+                            <li>Performed well and maintained a positive attitude during stressful situations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="double-column-item square-box-emphasis">
+                <div class="double-column-left-part square-box-emphasis">
+                    <h2>Extracurricular Activities</h2>
+                </div>
+                <div class="double-column-right-part">
+                    <div class="square-box-emphasis">
+                        <p class="title-item">Technation Sustainability and Post-Pandemic Recovery Competition</p>
+                        <p>Technation Canada and Microsoft</p>
+                        <p><strong>March 2022</strong></p>
+                        <div class="resume-key-points">
+                            <ul>
+                                <li>Created automated blind solution to save energy in comercial buildings.</li>
+                                <li>Placed top 5 in Canada</li>
+                            </ul>
+                        </div>
+                        <p>
+                            Me and two other CSCI students got together and came up with the idea for using
+                            software to optimally open and close window blinds. This would allow for sunlight
+                            energy to heat the building in the summer, and be blocked in the winter.
+                            We created an interactive diagram for showing how this could be achieved. It
+                            can be found <a href="https://github.com/Enprogames/sustainablinds">here</a>.
+                            For more information on the challenge, visit
+                            <a href="https://technationcanada.agorize.com/en/challenges/open_innovation">its webpage</a>.
+                        </p>
+                    </div>
+                    <div class="square-box-emphasis">
+                        <p class="title-item">Campbell River Hackathon</p>
                     <p>Community Center, Campbell River, BC</p>
                     <p><strong>May 2019</strong></p>
+                    <ul class="resume-key-points">
+                        <li>Created event handler for our city</li>
+                        <li>Placed 2nd</li>
+                        <li>A strong lesson in the importance of team communication</li>
+                    </ul>
                     <p>
                         The purpose of this challenge was to use knowledge of computer science to improve
                         our city for its youths. Me and three other students from my highschool teamed up
@@ -95,40 +98,28 @@
                         for and create events in our city. Check out our project
                         <a href="https://github.com/Toranian/CR-Hackathon-Youth-Events">here</a>.
                     </p>
-                    <ul>
-                        <li>Placed 2nd</li>
-                        <li>A strong lesson in the importance of team communication</li>
-                    </ul>
-                </td>
-            </tr>
-            <tr> <!-- Row 6 -->
-                <th rowspan="2">Awards and Honors</th>
-                    <td>
+                    </div>
+                </div>
+            </div>
+            <div class="double-column-item square-box-emphasis">
+                <div class="double-column-left-part square-box-emphasis">
+                    <h2>Awards and Honors</h2>
+                </div>
+                <div class="double-column-right-part">
+                    <div class="square-box-emphasis">
                         <p class="title-item">Applied Skills - Computer Technology Award</p>
                         <p>Timberline Secondary, Campbell River, BC</p>
                         <p><strong>June 2020</strong></p>
-                    </td>
-            </tr>
-            <tr> <!-- Row 7 -->
-                <td>
-                    <p class="title-item">“A” Average Honor Roll</p>
-                    <p>Timberline Secondary, Campbell River, BC</p>
-                    <p><strong>2016 - 2020</strong></p>
-                </td>
-            </tr>
-        </table>
+                    </div>
+                    <div class="square-box-emphasis">
+                        <p class="title-item">“A” Average Honor Roll</p>
+                        <p>Timberline Secondary, Campbell River, BC</p>
+                        <p><strong>2016 - 2020</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <ul id="social-links" class="button-list">
-        <li><a href="https://github.com/Enprogames" target="_blank">
-            <img alt="github-icon" src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Github
-        </a></li>
-        <li><a href="https://www.linkedin.com/in/ethanposner/" target="_blank">
-            <img alt="linkedin-icon" src="img/linkedin-white.png" class="button-icon">&nbsp;Linkedin
-        </a></li>
-        <li><a href="https://stackoverflow.com/users/6946463/ethan-posner" target="_blank">
-            <img alt="stackoverflow-icon" src="img/stackoverflow-white.png" class="button-icon">&nbsp;Stackoverflow
-        </a></li>
-    </ul>
+    <div class="footer"></div>
 </body>
 </html>

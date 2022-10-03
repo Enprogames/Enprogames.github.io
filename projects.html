@@ -14,22 +14,10 @@
     <link rel="stylesheet" href="css/code-format.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.22.1/cytoscape.min.js"></script>
+    <script type="text/javascript" src="components.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="title">
-            <h1>Ethan Posner - Software Engineer</h1>
-        </div>
-        <div class="navbar">
-            <ul class="button-list">
-                <li><a href="/"><img alt="home-immage" src="img/home-white.png" class="button-icon">&nbsp;Home</a></li>
-                <li><a href="resume.html"><img alt="paper-image" src="img/form-white.png" class="button-icon">&nbsp;Resume</a></li>
-                <li><a href="projects.html"><img alt="bulb-image" src="img/bulb-white.png" class="button-icon">&nbsp;Projects</a></li>
-                <li><a href="hobbies.html"><img alt="hiker-image" src="img/hobbies.png" class="button-icon">&nbsp;Hobbies</a></li>
-                <li><a href="contact.html"><img alt="mail-image" src="img/contact.png" class="button-icon">&nbsp;Contact</a></li>
-            </ul>
-        </div>
-    </div>
+    <div class="header"></div>
 
     <div class="content">
         <script>
@@ -49,16 +37,13 @@
                 cytoscape.use('cola')
             });
         </script>
-        <div class="cy-container">
-            <div id="cy"></div>
-        </div>
-        <div id="project-container">
-            <div class="project-item">
-                <div class="project-left-part">
+        <div id="double-column-container">
+            <div class="double-column-item">
+                <div class="double-column-left-part">
                     <h2>SQL Injection Example Website</h2>
                     <img alt="sql-injection3.JPG" class="project-image" src="img/sql-injection3.JPG">
                 </div>
-                <div class="project-right-part">
+                <div class="double-column-right-part">
                     <p>
                         A simple Django website, created in collaboration with Sebastien Van Den Brempt
                         (<a href="https://github.com/Sebastien-Van">github</a>), to demonstrate
@@ -104,13 +89,13 @@
                 </div>
             </div>
             <hr>
-            <div class="project-item">
-                <div class="project-left-part">
+            <div class="double-column-item">
+                <div class="double-column-left-part">
                     <h2>Flashcard Tool</h2>
                     <img alt="flashcard-tool1.JPG" class="project-image" src="img/flashcard-tool1.JPG">
                     <img alt="flashcard-tool2.JPG" class="project-image" src="img/flashcard-tool2.JPG">
                 </div>
-                <div class="project-right-part">
+                <div class="double-column-right-part">
                     <p>
                         A program used for displaying flashcards. Flashcards are a great way to study
                         and memorize large amounts of information. They allow the user to repeatedly
@@ -140,12 +125,12 @@
                 </div>
             </div>
             <hr>
-            <div class="project-item">
-                <div class="project-left-part">
+            <div class="double-column-item">
+                <div class="double-column-left-part">
                     <h2>School Clock</h2>
                     <img alt="clock1.JPG" class="project-image" src="img/clock1.JPG" id="clock-image">
                 </div>
-                <div class="project-right-part">
+                <div class="double-column-right-part">
                     <p>
                         A python clock, created for the computer science classroom at my highschool, which
                         displays the time, current class, whether it is break time, and a joke at the top.
@@ -168,12 +153,12 @@
             </div>
         </div>
         <hr>
-        <div class="project-item">
-            <div class="project-left-part">
+        <div class="double-column-item">
+            <div class="double-column-left-part">
                 <h2>Music Player</h2>
                 <img alt="music-player1.JPG" class="project-image" src="img/music-player1.JPG">
             </div>
-            <div class="project-right-part">
+            <div class="double-column-right-part">
                 <p>
                     A simple music player program written in python. It uses pygame mixer for playing
                     sound files, and TKinter for the user interface. It also uses a python library
@@ -204,18 +189,11 @@
                 </a>
             </div>
         </div>
+        <h1 class="project-graph-title">Project Graph (from github)</h1>
+        <div class="cy-container">
+            <div id="cy" class="square-box-emphasis"></div>
+        </div>
     </div>
-
-    <ul id="social-links" class="button-list">
-        <li><a href="https://github.com/Enprogames" target="_blank">
-            <img alt="github-icon" src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Github
-        </a></li>
-        <li><a href="https://www.linkedin.com/in/ethanposner/" target="_blank">
-            <img alt="linkedin-icon" src="img/linkedin-white.png" class="button-icon">&nbsp;Linkedin
-        </a></li>
-        <li><a href="https://stackoverflow.com/users/6946463/ethan-posner" target="_blank">
-            <img alt="stackoverflow-icon" src="img/stackoverflow-white.png" class="button-icon">&nbsp;Stackoverflow
-        </a></li>
-    </ul>
+    <div class="footer"></div>
 </body>
 </html>

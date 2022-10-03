@@ -6,11 +6,15 @@ body {
     background-image: url("img/bg-code-blured.jpg");
     font-family: Courier New, Helvetica, sans-serif;
 
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
-    align-items: center;
     color: white;
     text-shadow: 0px 4px 4px #000000;
+}
+
+body h1 {
+    font-family: Courier New, Helvetica, sans-serif;
+    font-weight: normal;
 }
 
 .button {
@@ -64,10 +68,31 @@ a:hover {
     font-weight: normal;
 }
 
+.title a {
+    width: auto;
+    height: auto;
+    padding: 8px;
+    border-radius: 10px;
+    background-color:#43476d44;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.title a:hover {
+    background: rgba(39, 38, 52, 0.325);
+}
+
 .navbar {
     display: flex;
     padding: 0px;
     height: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items:flex-start;
+    justify-content:left;
 }
 
 .button-list {
@@ -117,10 +142,8 @@ a:hover {
 /* ### Homepage ### */
 
 .content {
-    margin: 20px;
-    width: 90%;
-    top: 20%;
-    bottom: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 #personal-summary {
@@ -153,49 +176,32 @@ a:hover {
 
 /* ### Resume Page ### */
 
-#resume-table {
-    display: flex;
-    justify-content: center;
-    border: none;
-    background: rgba(255, 255, 255, 0.175);
-    border-radius: 20px;
+.title-item {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration:underline;
 }
 
-#resume-table th, #resume-table td {
+.resume-key-points {
+    font-size: 1.2em;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.square-box-emphasis {
     border-radius: 20px;
     padding: 20px;
     border: 1px solid white;
 }
 
-#resume-table th {
-    font-size: 1.1em;
-}
-
-#resume-table td {
-    line-height: 5px;
-}
-
-#resume-table td p {
-    line-height: normal;
-}
-
-#resume-table td ul {
-    line-height: normal;
-}
-
-.title-item {
-    font-size: 1.2em;
-    font-weight: bold;
-}
 
 /* ### Projects and Hobbies Pages ### */
 
-.project-container {
+.double-column-container {
     display: flex;
-    border: 1px solid orange;
 }
 
-.project-item {
+.double-column-item {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -204,8 +210,7 @@ a:hover {
     background: rgba(128, 128, 128, 0.179);
 }
 
-
-.project-left-part {
+.double-column-left-part {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,16 +218,23 @@ a:hover {
     flex-wrap: wrap;
     margin-right: auto;
     padding: 20px;
+    max-width: 500px;
+    width: 100%;
 }
 
-.project-right-part {
-    margin-left: auto;
-    margin-right: 20px;
+.double-column-left-part h1, .double-column-left-part h2 {
+    background-color: rgba(55, 54, 54, 0.496);
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.double-column-right-part {
+    margin-left: 20px;
+    margin-right: auto;
     padding: 20px;
-}
-
-.project-right-part p, .project-right-part ul {
     max-width: 800px;
+    width: 100%;
 }
 
 .project-image {
@@ -266,6 +278,12 @@ figcaption {
     font-size: 0.8em;
 }
 
+.project-graph-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Cytoscape Project Graph */
 .cy-container {
     display: flex;
@@ -282,6 +300,7 @@ figcaption {
     flex-direction: center;
     justify-content: center;
 }
+
 
 /* Contact Page */
 
