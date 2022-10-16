@@ -44,8 +44,14 @@
                     <img alt="sql-injection3.JPG" class="project-image" src="img/sql-injection3.JPG">
                 </div>
                 <div class="double-column-right-part">
+                    <div class="square-box-emphasis key-points">
+                        <ul>
+                            <li>Demonstrates how the prevalent security vulnerability of SQL injections can be used</li>
+                            <li>Implemented using a fully-fledged web backend with Python and Django</li>
+                        </ul>
+                    </div>
                     <p>
-                        A simple Django website, created in collaboration with Sebastien Van Den Brempt
+                        A simple Django website, created in collaboration with Sebastien Van Den Bremt
                         (<a href="https://github.com/Sebastien-Van">github</a>), to demonstrate
                         how SQL injections work. It features user registration and logging in,
                         and stores documents for the users.
@@ -55,17 +61,18 @@
                         backend was added. At the time of writing, this authentication backend is the
                         background of this website. It works by executing the following SQL statement:
                     </p>
-                    <p class="code python-code">
-                        <span class="sql-code">
-                        "<span class="clause">SELECT</span> 
-                        <span class="clause">*</span> 
-                            <span class="clause">FROM</span>
-                                <span class="identifier">auth_user</span>
-                            <span class="clause">WHERE</span>
-                                <span class="identifier">username</span> = <span class="string">'%s'</span>
-                                <span class="bool-operator">AND</span> <span class="identifier">password</span>=<span class="string">'%s'</span>"</span>
-                                % (username, <span class="function">make_password</span>(password, salt=salt))
-                    </p>
+                    <p>
+                        <div class="code python-code">
+                            <span class="sql-code">
+                            "<span class="clause">SELECT</span> 
+                            <span class="clause">*</span> 
+                                <span class="clause">FROM</span>
+                                    <span class="identifier">auth_user</span>
+                                <span class="clause">WHERE</span>
+                                    <span class="identifier">username</span> = <span class="string">'%s'</span>
+                                    <span class="bool-operator">AND</span> <span class="identifier">password</span>=<span class="string">'%s'</span>"</span>
+                                    % (username, <span class="function">make_password</span>(password, salt=salt))
+                        </div>
                     <p>
                         If more than one user is found using the query, the first one is returned. This
                         means that to bypass the system's authentication and login as a user, named "Nick"
@@ -96,6 +103,12 @@
                     <img alt="flashcard-tool2.JPG" class="project-image" src="img/flashcard-tool2.JPG">
                 </div>
                 <div class="double-column-right-part">
+                    <div class="square-box-emphasis key-points">
+                        <ul>
+                            <li>Great study aid for memorizing many terms/concepts/ideas</li>
+                            <li>Fully interactive graphical interface</li>
+                        </ul>
+                    </div>
                     <p>
                         A program used for displaying flashcards. Flashcards are a great way to study
                         and memorize large amounts of information. They allow the user to repeatedly
@@ -131,6 +144,11 @@
                     <img alt="clock1.JPG" class="project-image" src="img/clock1.JPG" id="clock-image">
                 </div>
                 <div class="double-column-right-part">
+                    <div class="square-box-emphasis key-points">
+                        <ul>
+                            <li>Displays current events based on list of daily/weekly/monthly events</li>
+                        </ul>
+                    </div>
                     <p>
                         A python clock, created for the computer science classroom at my highschool, which
                         displays the time, current class, whether it is break time, and a joke at the top.
@@ -159,6 +177,12 @@
                 <img alt="music-player1.JPG" class="project-image" src="img/music-player1.JPG">
             </div>
             <div class="double-column-right-part">
+                <div class="square-box-emphasis key-points">
+                    <ul>
+                        <li>Simple program for playing music</li>
+                        <li>Fully interactive graphical interface</li>
+                    </ul>
+                </div>
                 <p>
                     A simple music player program written in python. It uses pygame mixer for playing
                     sound files, and TKinter for the user interface. It also uses a python library
@@ -182,7 +206,7 @@
                 <ul>
                     <li>Python</li>
                     <li>TKinter</li>
-                    <li>Mutagen</li>
+                    <li>Pygame and Mutagen</li>
                 </ul>
                 <a class="button" href="https://github.com/Enprogames/MusicPlayer" target="_blank">
                     <img alt="GitHub-Mark-Light-32px.png" src="img/GitHub-Mark-Light-32px.png" class="button-icon">&nbsp;Repository
