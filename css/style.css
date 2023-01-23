@@ -2,19 +2,30 @@
 /* style.css - Styling for the entire webpage */
 /* Ethan Posner (658-180-559), March 30th, 2022 */
 
+
+:root {
+    --button: rgba(39, 38, 52, 0.594);
+    --button-hover: rgb(9, 8, 15);
+    --button-border: rgba(53, 50, 92, 0.594);
+    --button-hover-border: rgba(47, 46, 75, 0.594);
+    --button-active-border: rgba(47, 46, 75, 0.594);
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hjQ.ttf') format('truetype');
+}
+
 body {
     background-image: url("img/bg-code-blured.jpg");
-    font-family: Courier New, Helvetica, sans-serif;
+    font-family: 'Inter';
 
     /* display: flex; */
     flex-direction: column;
     color: white;
     text-shadow: 0px 4px 4px #000000;
-}
-
-body h1 {
-    font-family: Courier New, Helvetica, sans-serif;
-    font-weight: normal;
 }
 
 .button {
@@ -25,9 +36,9 @@ body h1 {
     text-shadow: 0px 4px 4px #000000;
     font-size: 20px;
     font-weight: bold;
-    background: rgba(39, 38, 52, 0.594);
+    background: var(--button);
     border-radius: 15px;
-    border: 3px solid rgba(255, 255, 255, 0.238);
+    border: 3px solid var(--button-border);
     padding: 5px 15px;
     height: 50px;
     width: fit-content;
@@ -43,7 +54,12 @@ a:hover {
 
 .button:hover {
     color: lightblue;
-    background: rgb(9, 8, 15);
+    background: var(--button-hover);
+}
+.button:active {
+    color: lightblue;
+    background: var(--button-active);
+    border: 3px solid var(--button-active-border);
 }
 
 /* Top header of webpage. This will be the same on each webpage */
@@ -63,6 +79,7 @@ a:hover {
     margin-right: auto;
     padding: 0px 20px;
 }
+
 .title h1 {
     font-size: 40px;
     font-weight: normal;
@@ -73,7 +90,7 @@ a:hover {
     height: auto;
     padding: 8px;
     border-radius: 10px;
-    background-color:#43476d44;
+    background-color: #43476d44;
     color: white;
     text-decoration: none;
     padding: 5px 15px;
@@ -89,10 +106,16 @@ a:hover {
     height: 100%;
 }
 
+.navbar a {
+    padding: 5px 15px;
+    height: 50px;
+    
+}
+
 .footer {
     display: flex;
-    align-items:flex-start;
-    justify-content:left;
+    align-items: flex-start;
+    justify-content: left;
 }
 
 .button-list {
@@ -104,8 +127,9 @@ a:hover {
 .button-list li {
     display: flex;
     align-items: center;
-    margin: 20px;
     text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .button-list a {
@@ -118,14 +142,14 @@ a:hover {
     font-weight: bold;
     background: rgba(39, 38, 52, 0.594);
     border-radius: 15px;
-    border: 3px solid rgba(255, 255, 255, 0.238);
+    border: 3px solid var(--button);
     padding: 5px 15px;
     height: 50px;
 }
 
 .button-list a:hover {
     color: lightblue;
-    background: rgb(39, 38, 52);
+    background: var(--button-hover);
 }
 
 .button-icon {
@@ -179,7 +203,7 @@ a:hover {
 .title-item {
     font-size: 1.2em;
     font-weight: bold;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 .key-points {
@@ -188,10 +212,49 @@ a:hover {
     border: 1px solid white;
 }
 
+.key-points li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .square-box-emphasis {
     border-radius: 20px;
     padding: 20px;
     border: 1px solid white;
+}
+
+/* Apply to a table where text elements should be tabbed and aligned over multiple lines */
+.aligned-items-table .left-item {
+    padding-right: 50px;
+}
+
+.collapsible {
+    width: 100%;
+    margin: 10px 5px;
+}
+
+.active, .collapsible:hover {
+    background-color: var(--button-hover);
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+  }
+
+.collapsible-content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    /* background-color: #f1f1f1; */
+    transition: max-height 0.2s ease-out;
 }
 
 
@@ -222,7 +285,8 @@ a:hover {
     width: 100%;
 }
 
-.double-column-left-part h1, .double-column-left-part h2 {
+.double-column-left-part h1,
+.double-column-left-part h2 {
     background-color: rgba(55, 54, 54, 0.496);
     padding: 5px;
     border-radius: 10px;
@@ -254,16 +318,17 @@ a:hover {
     resize: both;
 }
 
-#hiking-hobby p, #hiking-hobby figcaption {
+#hiking-hobby p,
+#hiking-hobby figcaption {
     text-shadow: 2px 0 0 rgb(0, 0, 0),
-                -2px 0 0 rgb(0, 0, 0),
-                0 2px 0 rgb(0, 0, 0),
-                0 -2px 0 rgb(0, 0, 0),
-                1px 1px rgb(0, 0, 0),
-                -1px -1px 0 rgb(0, 0, 0),
-                1px -1px 0 rgb(0, 0, 0),
-                -1px 1px 0 rgb(0, 0, 0);
-    
+        -2px 0 0 rgb(0, 0, 0),
+        0 2px 0 rgb(0, 0, 0),
+        0 -2px 0 rgb(0, 0, 0),
+        1px 1px rgb(0, 0, 0),
+        -1px -1px 0 rgb(0, 0, 0),
+        1px -1px 0 rgb(0, 0, 0),
+        -1px 1px 0 rgb(0, 0, 0);
+
     border-radius: 10px;
     padding: 5px;
     background-color: rgba(39, 38, 52, 0.594);
@@ -317,7 +382,7 @@ figcaption {
 }
 
 .contact-form-container form input {
-   margin: 10px;
+    margin: 10px;
 }
 
 #message_area {
@@ -329,7 +394,7 @@ figcaption {
 #submit-button {
     width: 80px;
     height: 30px;
-    background:rgba(128, 128, 128, 0.179);
+    background: rgba(128, 128, 128, 0.179);
     color: white;
     border-radius: 20px;
 }
