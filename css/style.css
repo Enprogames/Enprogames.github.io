@@ -4,6 +4,7 @@
 
 
 :root {
+    --bg: rgb(3, 2, 29);
     --button: rgba(39, 38, 52, 0.594);
     --button-hover: rgb(9, 8, 15);
     --button-border: rgba(53, 50, 92, 0.594);
@@ -20,6 +21,7 @@
 
 body {
     background-image: url("img/bg-code-blured.jpg");
+    background-color: var(--bg);
     font-family: 'Inter';
 
     /* display: flex; */
@@ -66,18 +68,16 @@ a:hover {
 
 .header {
     color: white;
-    margin: 20px 5%;
-    width: 90%;
-    height: 10%;
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 .title {
-    margin-right: auto;
-    padding: 0px 20px;
+    margin: 10px 10px;
 }
 
 .title h1 {
@@ -102,26 +102,19 @@ a:hover {
 
 .navbar {
     display: flex;
-    padding: 0px;
     height: 100%;
 }
 
 .navbar a {
     padding: 5px 15px;
     height: 50px;
-    
-}
-
-.footer {
-    display: flex;
-    align-items: flex-start;
-    justify-content: left;
 }
 
 .button-list {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    justify-content: center;
 }
 
 .button-list li {
@@ -209,7 +202,6 @@ a:hover {
 .key-points {
     font-size: 1.2em;
     border-radius: 10px;
-    border: 1px solid white;
 }
 
 .key-points li {
@@ -217,10 +209,8 @@ a:hover {
     margin-bottom: 5px;
 }
 
-.square-box-emphasis {
-    border-radius: 20px;
+.separated-emphasis {
     padding: 20px;
-    border: 1px solid white;
 }
 
 /* Apply to a table where text elements should be tabbed and aligned over multiple lines */
@@ -235,6 +225,10 @@ a:hover {
 
 .active, .collapsible:hover {
     background-color: var(--button-hover);
+}
+
+.collapsible:hover {
+    cursor:pointer;
 }
 
 .collapsible:after {
