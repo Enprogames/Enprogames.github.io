@@ -5,7 +5,7 @@ function create_header() {
     const title_div = document.createElement("div");
     title_div.className = "title";
     title_div.innerHTML = `
-        <h1><a href="/">Ethan Posner - Software Engineer</a></h1>
+        <h1><a href="/">Ethan Posner - Software Developer</a></h1>
     `;
     const navbar_div = document.createElement("div");
     navbar_div.className = "navbar";
@@ -37,7 +37,9 @@ function create_footer() {
                 <img alt="stackoverflow-icon" src="img/stackoverflow-white.png" class="button-icon">&nbsp;Stackoverflow
             </a></li>
         </ul>
+        <small id="copyright-notice">&copy; Ethan Posner <span class="current-year"</span></small>
     `;
+    document.querySelector('.current-year').innerHTML = new Date().getFullYear();;
 }
 
 // perform all the functions when the page finishes loading

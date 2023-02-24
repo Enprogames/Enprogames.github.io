@@ -203,7 +203,6 @@
         <script>
             graph_url = "https://project-graph.ethanposner.com/"
             $.getJSON(graph_url, function (data) {
-                console.log(data.graph)
                 
                 var cy = cytoscape({
                     container: $('#cy'),

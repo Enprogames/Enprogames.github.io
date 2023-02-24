@@ -114,7 +114,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: center;
+    /* justify-content: center; TODO: Remove this */ 
 }
 
 .button-list li {
@@ -150,11 +150,23 @@ a:hover {
     height: 20px;
 }
 
+/* BOTTOM OF WEBPAGE (FOOTER) */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Social Media Links */
 #social-links {
     color: white;
-    margin-right: auto;
 }
+
+small {
+    margin: 2%;
+    padding: 5px;
+}
+
 
 /* ### Homepage ### */
 
@@ -353,8 +365,8 @@ figcaption {
 #cy {
     width: 80%;
     height: 600px;
-    /* height: 60%; */
-    /* display: block; */
+    border: 1px solid white;
+    border-radius: 10px;
     display: flex;
     flex-direction: center;
     justify-content: center;
