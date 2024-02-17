@@ -196,26 +196,6 @@
                 </a>
             </div>
         </div>
-        <h1 class="project-graph-title">Project Graph (from github)</h1>
-        <div class="cy-container">
-            <div id="cy" class="separated-emphasis"></div>
-        </div>
-        <script>
-            graph_url = "https://project-graph.ethanposner.com/"
-            $.getJSON(graph_url, function (data) {
-                
-                var cy = cytoscape({
-                    container: $('#cy'),
-                    elements: data.graph,
-                    style: data.style,
-                    wheelSensitivity: 0.05,  // fixes super-fast zooming when using scroll wheel
-                    layout: {
-                        name: 'cose'
-                    }
-                });
-                cytoscape.use('cola')
-            });
-        </script>
     </div>
     <div class="footer"></div>
 </body>
