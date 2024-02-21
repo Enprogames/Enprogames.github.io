@@ -1,7 +1,7 @@
 # personal-site
 A personal website created for my career in computer science.
 
-Visit it at [https://ethanposner.com/](https://ethanposner.com/).
+Visit it at [https://enprogames.github.io/personal-site/](https://enprogames.github.io/personal-site/).
 
 ## Special Parts
 
